@@ -37,7 +37,8 @@ def next_char(text, temperature=1.0):
 
 def complete_text(prompt, n_chars=200, temperature=0.7):
     print(f"--- Generating {n_chars} chars with temperature {temperature} ---")
-    print(prompt, end="", flush=True)
+    input_prompt = f"{prompt}...\n"
+    print(input_prompt, end="", flush=True)
     
     current_text = prompt
     for _ in range(n_chars):

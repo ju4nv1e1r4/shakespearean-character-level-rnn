@@ -47,5 +47,5 @@ def complete_text(prompt, n_chars=200, temperature=0.7):
     print("\n\n--- The End ---")
 
 # let's test
-initial_prompt = "The king said"
+initial_prompt = input("Enter a shakespearean prompt: ")
 complete_text(initial_prompt, n_chars=300, temperature=0.6)
